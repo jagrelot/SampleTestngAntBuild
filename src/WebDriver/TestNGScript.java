@@ -19,7 +19,7 @@ public class TestNGScript {
 	@BeforeTest
 	public void beforeTestsetUp(){
 		
-		System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/Salesforce Org Demo - Validate - Git/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "//var//lib//jenkins//workspace//Salesforce Org Demo - Validate - Git//chromedriver.exe");
 		chromeDriver = new ChromeDriver();
 	}
 	
