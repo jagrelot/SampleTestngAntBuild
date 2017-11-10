@@ -32,7 +32,7 @@
     </copy>
 </target>
 	
-<target name="compile">
+<target name="compile" depends="init">
 		<javac classpathref="classpath" srcdir="src" destdir="bin" includeantruntime="true" compiler="modern"></javac>
 </target>
 	
