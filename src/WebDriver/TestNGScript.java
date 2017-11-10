@@ -19,7 +19,7 @@ public class TestNGScript {
 	@BeforeTest
 	public void beforeTestsetUp(){
 		
-		System.setProperty("webdriver.chrome.driver", "/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		chromeDriver = new ChromeDriver();
 	}
 	
