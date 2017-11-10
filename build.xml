@@ -7,12 +7,14 @@
 	<property name="src.dir" value="src" />
 	<property name="lib.dir" value="lib" />
 	<property name="report.dir" value="test-output" />
+	
 	<path id="classpath">
 	        <fileset dir="lib">
 	            <include name="**/*.jar"/>
 	         </fileset>
 	        <pathelement path="${class.dir}"/>
 	 </path>
+	
 	<taskdef name="TestNG-Ant" classpathref="classpath" classname="org.testng.TestNGAntTask"></taskdef>
 	
 <target name="clean">
@@ -30,9 +32,10 @@
     </copy>
 </target>
 	
-<target name="compile" depends="init">
+<target name="compile">
 		<javac classpathref="classpath" srcdir="src" destdir="bin" includeantruntime="true" compiler="modern"></javac>
 </target>
+	
 <target name="testng" depends="compile">
 			<TestNG-Ant outputdir="test-output" classpathref="classpath">
 				<xmlfileset dir="." includes="testng.xml"/>
