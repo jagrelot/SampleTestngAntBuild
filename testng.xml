@@ -5,5 +5,5 @@
     <classes>
       <class name="WebDriver.TestNGScript"/>
     </classes>
-  </test> 
-</suite>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
