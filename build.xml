@@ -9,7 +9,7 @@
 	<property name="report.dir" value="test-output" />
 	
 	<path id="classpath">
-	        <fileset dir="libs">
+	        <fileset dir="/var/lib/jenkins/workspace/Selenium\ TestNG\ ANT\ Build\ -\ Git\ 2//libs">
 	            <include name="**/*.jar"/>
 	         </fileset>
 	        <pathelement path="${class.dir}"/>
